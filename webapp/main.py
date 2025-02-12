@@ -14,7 +14,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 openai.api_type = "azure"
 openai.api_version = "2023-05-15" 
 
-embeddings = OpenAIEmbeddings(deployment="demo-embedding", chunk_size=1)
+embeddings = OpenAIEmbeddings(deployment="text-embedding-ada-002", chunk_size=1)
 
 # Connect to Azure Cognitive Search
 acs = AzureSearch(azure_search_endpoint=os.getenv('SEARCH_SERVICE_NAME'),
